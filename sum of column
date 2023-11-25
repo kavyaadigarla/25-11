@@ -1,0 +1,11 @@
+n=int(input())
+A=[]
+for j in range(n):
+    l=list(map(int,input().split()))
+    A.append(l)
+for j in range(0,n):
+    csum=0
+    for i in range(0,n):
+        csum=csum+A[i][j]
+    print(csum,end=' ')
+    
